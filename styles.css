@@ -1,0 +1,26 @@
+@import url(variables.css);
+@import url(constantes.css);
+
+.absolute-center {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+body {
+    background-color: black;
+}
+
+.dg.ac{
+    display: none;
+}
+
+.caja {
+    left: 20%;
+    top: 35%;
+    width: 60%;
+    position: absolute;
+    height: 30%;
+    border: 1px solid grey;
+}
