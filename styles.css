@@ -21,12 +21,27 @@ body {
 }
 a{
     text-decoration: none;
+    color: var(--letras);
 }
-.about{
+.lateral-izquierdo, .lateral-derecho, header{
     position: fixed;
+}
+.lateral-izquierdo{
     left: 1%;
     top: 50%;
     transform: rotate(270deg);
+}
+header{
+    left: 45%;
+    top: 10%;
+}
+header a{
+    font-size: 20px;
+}
+.lateral-derecho {
+    right: 1%;
+    top: 50%;
+    transform: rotate(90deg);
 }
 .caja, .caja2 {
     position: absolute;
