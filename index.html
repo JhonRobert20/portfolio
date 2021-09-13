@@ -4,45 +4,44 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
         <script src="js/dat.gui.min.js"></script>
         <title>Portfolio Jhon</title>
         
     </head>
-    <body oncontextmenu="return false;" onmousedown="return false;" onselectstart="return false;" > 
+    <body oncontextmenu="return false;" onmousedown="return false;" onselectstart="return false;" class="swiper-container"> 
         <canvas></canvas>
         <header class="header">
-            <a class="cabezera" href="#">Jhon Robert</a>
+            <a class="cabezera" href="/portfolio/">Jhon Robert</a>
         </header>
-        </div>
         <div class="lateral-derecho">
             <a class="correo" href="mailto:jhonbara51214@gmail.com?subject=Hello">jhonbara51214@gmail.com</a>
         </div>
         <div class="lateral-izquierdo">
             <a class="about" href="#">About</a>
-        </div>   
-        
-
-        <div class="pantalla">
-            <div class="caja">
-                <h1>Jhon Robert</h1>
-                <p>Creative Web Developer</p>
+        </div>  
+        <div class="swiper-wrapper">
+            <div class="pantalla swiper-slide">
+                <div class="caja animado">
+                    <h1>Jhon Robert</h1>
+                    <p>Creative Web Developer</p>
+                </div>
             </div>
+            <div class="pantalla swiper-slide">
+                <div class="caja2 animado">aaaaaaaa</div>
+            </div>
+            <div class="pantalla swiper-slide">
+                <div class="caja3 animado">aaaaaa</div>
+            </div>
+            <div class="swiper-pagination"></div>
         </div>
-
-        <div class="pantalla">
-            <div class="caja2 animado"></div>
-        </div>
-
-        <div class="pantalla">
-            <div class="caja3 animado"></div>
-        </div>
+        
+        <script type="module" src="js/animaciones.js"></script>
         <script>
             window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
             ga('create', 'UA-105392568-1', 'auto');
-            ga('send', 'pageview');
         </script>
         <script src="js/script.js"></script>
-        <script src="js/animaciones.js"></script>
+        
     </body>
 </html>

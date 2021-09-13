@@ -1,5 +1,8 @@
+import Swiper from 'https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js'
+
+
+
 let animados = document.querySelectorAll(".animado");
-let cajas = document.querySelector(".caja2")
 var porcentajeAlturaViewport = window.innerHeight / 100;
 
 const print =  (mensaje, variable, i) => {
@@ -13,13 +16,21 @@ function removeIfContains(obj, clase) {
         obj.classList.remove(clase)
     }
 }
-
+var swiper = new Swiper('.swiper-container', {
+    direction: 'vertical',
+    slidesPerView: 1,
+    mousewheel: true,
+    
+  });
 
 function mostrarScroll() {
+    
     let scrollTop = document.documentElement.scrollTop;
     for (var i=0; i < animados.length; i++) {
         let animado = animados[i]
         let alturaAnimado = animado.offsetTop;
+        console.log("ada")
+        print('ada', scrollTop, i)
         if ((document.body.getBoundingClientRect()).top > scrollPos) {
             if(alturaAnimado - 35 * porcentajeAlturaViewport < scrollTop && 
                 scrollTop < alturaAnimado + -10 * porcentajeAlturaViewport) {
