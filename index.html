@@ -7,12 +7,12 @@
         <link rel="stylesheet" type="text/css" href="css/styles.css">
         <script src="js/dat.gui.min.js"></script>
         <title>Portfolio Jhon</title>
-        
+        <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/97120244f1bc8626cef51ff65/23683a8a21ef8ed4980f40d8c.js");</script>
     </head>
     <body oncontextmenu="return false;" onmousedown="return false;" onselectstart="return false;" class="swiper-container"> 
         <canvas></canvas>
         <header class="header">
-            <a class="cabezera" href="/portfolio/">Jhon Robert</a>
+            <a class="cabezera" href="/">Jhon Robert</a>
         </header>
         <div class="lateral-derecho">
             <a class="correo" href="mailto:jhonbara51214@gmail.com?subject=Hello">jhonbara51214@gmail.com</a>
@@ -21,27 +21,39 @@
             <a class="about" href="#">About</a>
         </div>  
         <div class="swiper-wrapper">
-            <div class="pantalla swiper-slide">
-                <div class="caja animado">
+            <div class="swiper-slide">
+                <div class="caja animado desdeArriba">
                     <h1>Jhon Robert</h1>
                     <p>Creative Web Developer</p>
                 </div>
             </div>
-            <div class="pantalla swiper-slide">
+            <div class="swiper-slide">
                 <div class="caja2 animado">aaaaaaaa</div>
             </div>
-            <div class="pantalla swiper-slide">
-                <div class="caja3 animado">aaaaaa</div>
+            <div class="swiper-slide">
+                <div class="caja3 animado">bbbbbbbbbb</div>
             </div>
+           
             <div class="swiper-pagination"></div>
         </div>
         
-        <script type="module" src="js/animaciones.js"></script>
+        <script src="js/animaciones.js"></script>
         <script>
             window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
             ga('create', 'UA-105392568-1', 'auto');
         </script>
         <script src="js/script.js"></script>
-        
+        <script type="module">
+            import Swiper from 'https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js';
+            var swiper = new Swiper('.swiper-container', {
+                direction: 'vertical',
+                slidesPerView: 1,
+                touchStartPreventDefault: false,
+                mousewheel: true,
+                
+            });
+            
+
+        </script>
     </body>
 </html>

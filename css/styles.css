@@ -79,13 +79,15 @@ a:hover {
     transition: all 1s;
 }
 .animado {
-    opacity: 0.5;
+    opacity: 0;
 }
 .desdeArriba {
     animation: desdeArriba 1s;
+    opacity: 1!important;
 }
 .desdeAbajo {
     animation: desdeAbajo 1s;
+    opacity: 1!important;
 }
 
 @keyframes desdeArriba {
@@ -117,4 +119,6 @@ a:hover {
     width: 20vw;
     margin-left: 40vw;
 }
-    
+.my-gallery figure {
+    margin: 0px;
+  }
