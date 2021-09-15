@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: #181818;
 }
 
 .dg.ac{
@@ -22,25 +22,32 @@ body {
 a{
     text-decoration: none;
     color: var(--letras);
+    text-transform:uppercase;
 }
-.lateral-izquierdo, .lateral-derecho, .header{
-    position: fixed;
-}
+
 .lateral-izquierdo{
     right: 95%;
     top: 50%;
     transform: rotate(270deg);
 }
+.fixed {
+    position: fixed;
+}
 .lateral-derecho {
     top: 50%;
-    left: 90%;
+    left: 85%;
+    display: inline;
+    white-space: nowrap;
     transform: rotate(90deg);
+}
+.lateral-derecho a:nth-child(1) {
+    margin-right: 20px;
 }
 .header{
     width: 100%;
     left: 0;
     text-align: center;
-    top: 10%;
+    top: 5%;
 }
 header a{
     font-size: 20px;

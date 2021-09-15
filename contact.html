@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Jhon Robert</title>
+    <script src="js/dat.gui.min.js"></script>
+</head>
+<body oncontextmenu="return false;" onselectstart="return false;">
+    <canvas></canvas>
+    <div class="lateral-derecho fixed">
+        <a class="correo" href="mailto:jhonbara10@hotmail.com?subject=Hello">JHONBARA10@HOTMAIL.COM</a>
+        <a href="/index.html">JHON ROBERT</a>
+    </div>
+    <header class="header fixed jhon">
+        <a class="cabezera" href="/">Jhon Robert</a>
+    </header>
+    <div class="lateral-izquierdo fixed">
+        <a class="about" href="#">About</a>
+    </div> 
+    <div class="contact-content">
+        <div class="success">
+            <p><span class="tick">&#10003;</span> Thanks for sending an email. I will contant you soon! </p>
+            <a href="/"> Jhon Robert</a>
+        </div>
+        <form action="https://formspree.io/f/xeqvnebw" id="contact_form" method="POST" class="contact_form">
+            <h3>HOW CAN I HELP YOU?</h3>
+            <ul>
+                <li>
+                    <label for="name">Your name</label>
+                    <input type="text" name="name">
+                </li>
+                <li>
+                    <label for="email">Your email <span>*</span> </label>
+                    <input type="email" name="email" required>
+                </li>
+                <li>
+                    <label for="message">Your message <span>*</span></label>
+                    <textarea name="message" required></textarea>
+                </li>
+                <li>
+                    <button class="button" type="submit">Send</button>
+                </li>
+            </ul>
+        </form>
+    </div>
+    <script>
+        const $form = document.querySelector("#contact_form")
+        $form.addEventListener('submit', handleSubmit)
+
+        async function handleSubmit(event) {
+            event.preventDefault()
+            const form = new FormData(this)
+            const response = await fetch(this.action, {
+                method: this.method,
+                body: form,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            if (response.ok) {
+                this.reset()
+                document.querySelector('.contact_form').style['margin-top'] = '50px'
+                document.querySelector('.success').style['display'] = 'block';
+                document.querySelector('.jhon').style['display'] = 'none';
+                document.querySelector('#enviado').classList.add('mostrar')
+            }
+        }
+    </script>
+    <script>
+        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+        ga('create', 'UA-105392568-1', 'auto');
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>
