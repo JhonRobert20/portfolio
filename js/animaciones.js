@@ -77,4 +77,3 @@ function mostrarScroll() {
 }
 
 document.querySelector('.swiper-container').addEventListener('wheel', debounce(mostrarScroll, 100), false)
-document.querySelector('.swiper-container').addEventListener('touchmove', mostrarScroll)

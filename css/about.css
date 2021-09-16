@@ -1,0 +1,16 @@
+.about {
+    position: relative;
+    width: 70%;
+    margin: 200px auto;
+    border:1px solid grey;
+}
+.about h2, .about p {
+    color: white;
+    text-align: center;
+}
+.about h2{
+    font-size: 32px;
+}
+.about .about_list li {
+    padding: 10px;
+}

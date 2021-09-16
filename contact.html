@@ -12,14 +12,13 @@
 <body oncontextmenu="return false;" onselectstart="return false;">
     <canvas></canvas>
     <div class="lateral-derecho fixed">
-        <a class="correo" href="mailto:jhonbara10@hotmail.com?subject=Hello">JHONBARA10@HOTMAIL.COM</a>
-        <a href="/index.html">JHON ROBERT</a>
+        <a class="correo" href="mailto:jhonbara10@hotmail.com?subject=Hello">jhonbara10@hotmail.com</a>
     </div>
     <header class="header fixed jhon">
         <a class="cabezera" href="/">Jhon Robert</a>
     </header>
     <div class="lateral-izquierdo fixed">
-        <a class="about" href="#">About</a>
+        <a class="about" href="/about.html">About</a>
     </div> 
     <div class="contact-content">
         <div class="success">
@@ -27,19 +26,16 @@
             <a href="/"> Jhon Robert</a>
         </div>
         <form action="https://formspree.io/f/xeqvnebw" id="contact_form" method="POST" class="contact_form">
-            <h3>HOW CAN I HELP YOU?</h3>
+            <h3>How can I help you?</h3>
             <ul>
                 <li>
-                    <label for="name">Your name</label>
-                    <input type="text" name="name">
+                    <input type="text" placeholder="Name" name="name">
                 </li>
                 <li>
-                    <label for="email">Your email <span>*</span> </label>
-                    <input type="email" name="email" required>
+                    <input placeholder="Email*" type="email" name="email" required>
                 </li>
                 <li>
-                    <label for="message">Your message <span>*</span></label>
-                    <textarea name="message" required></textarea>
+                    <textarea placeholder="Message*" name="message" required></textarea>
                 </li>
                 <li>
                     <button class="button" type="submit">Send</button>

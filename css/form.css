@@ -4,12 +4,15 @@ label {
     font-weight: bold;
 }
 .contact_form {
-    width: 70%;
+    width: 40%;
+    z-index: 2;
+    position: relative;
     margin: 0 auto;
     margin-top: 100px;
-    border: 1px solid white;
-    background-color: #181818;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.1);
 }
+
 .contact_form ul li{
     text-align: left;
     padding: 20px;
@@ -32,22 +35,26 @@ textarea {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    border-radius: 10px;
+
 }
 .button:hover {
     cursor: pointer;
-    background-color: #42FF2D;
+    background-color: #42ac36;
 }
 .success {
     color:white;
-    width: 70%;
+    width: 40%;
     margin: 20px auto 0px auto;
     position: relative;
     padding: 20px;
     font-size: 19px;
     text-align: center;
-    z-index: 2;
     display: none;
     background-color: #42ac36;
+}
+.success a {
+    color: #181818;
 }
 h3{
     color: white;
@@ -58,6 +65,10 @@ h3{
 .tick {
     float: left;
 }
-a {
-    color: #181818;
+
+textarea, input {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    outline: none;
 }

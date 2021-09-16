@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: #181818;
+    background-color: var(--negro);
 }
 
 .dg.ac{
@@ -22,7 +22,7 @@ body {
 a{
     text-decoration: none;
     color: var(--letras);
-    text-transform:uppercase;
+    text-transform: inherit;
 }
 
 .lateral-izquierdo{
@@ -81,12 +81,22 @@ a:hover {
     top: 135%;
     transition: all 1s;
 }
+.caja2 img {
+    z-index: 1;
+    display: block;
+    margin: 0 auto;
+    height: 30vh;
+    transition: all 1s;
+}
+.caja2 img:hover {
+    opacity: 0.5;
+}
 .caja3 {
     top: 235%;
     transition: all 1s;
 }
 .animado {
-    opacity: 0;
+    opacity: 0.5;
 }
 .desdeArriba {
     animation: desdeArriba 1s;
@@ -129,3 +139,8 @@ a:hover {
 .my-gallery figure {
     margin: 0px;
   }
+
+.grid-2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}

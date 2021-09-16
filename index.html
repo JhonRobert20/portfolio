@@ -9,18 +9,20 @@
         <title>Portfolio Jhon</title>
         <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/97120244f1bc8626cef51ff65/23683a8a21ef8ed4980f40d8c.js");</script>
     </head>
-    <body oncontextmenu="return false;" onmousedown="return false;" onselectstart="return false;" class="swiper-container"> 
+    <body oncontextmenu="return false;" onmousedown="return false;" onselectstart="return false;">
         <canvas></canvas>
         <header class="header fixed">
-            <a class="cabezera" href="/">Jhon Robert</a>
+            <a  href="/">Jhon Robert</a>
         </header>
         <div class="lateral-derecho fixed">
             <a class="correo" href="mailto:jhonbara10@hotmail.com?subject=Hello">jhonbara10@hotmail.com</a>
-            <a class="correo" href="/contact.html">contact</a>
+            <a class="correo" href="/contact.html">Contact</a>
         </div>
         <div class="lateral-izquierdo fixed">
-            <a class="about" href="#">About</a>
+            <a class="about" href="/about.html">About</a>
         </div>  
+        <div class="swiper-container swiper">
+
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="caja animado desdeArriba">
@@ -29,14 +31,17 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="caja2 animado">aaaaaaaa</div>
+                <div class="caja2 animado">
+                    <div><img src="media/Para_Cv.jpg" alt=""></div>
+                </div>
             </div>
             <div class="swiper-slide">
                 <div class="caja3 animado">bbbbbbbbbb</div>
             </div>
            
-            <div class="swiper-pagination"></div>
         </div>
+    </div>
+
         
         <script src="js/animaciones.js"></script>
         <script>
@@ -49,11 +54,13 @@
             var swiper = new Swiper('.swiper-container', {
                 direction: 'vertical',
                 slidesPerView: 1,
-                touchStartPreventDefault: false,
+                centeredSlides: true,
+                touchStartPreventDefault: true,
                 mousewheel: true,
+                slidesPerGroup: 1,
                 
             });
-            
+
 
         </script>
     </body>
