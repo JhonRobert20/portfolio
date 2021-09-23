@@ -26,8 +26,8 @@ input, .button, textarea {
 textarea {
     height: 30vh;
 }
-.button {
-    background-color: #181818; /* Green */
+button {
+    background-color: #181818;
     border: 1px solid white;
     color: white;
     padding: 15px 32px;
@@ -38,7 +38,7 @@ textarea {
     border-radius: 10px;
 
 }
-.button:hover {
+button:hover {
     cursor: pointer;
     background-color: #42ac36;
 }

@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     z-index: 1;
+    font-family: 'Be Vietnam Pro', sans-serif;
 }
 
 html, body{
@@ -22,4 +23,7 @@ canvas {
 }
 li {
     list-style: none;
+}
+h1, h2, h3, h4{
+    text-transform: capitalize;
 }
