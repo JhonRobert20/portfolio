@@ -1,18 +1,22 @@
 let animados = document.querySelectorAll(".swiper-slide");
 let pantallas = document.querySelectorAll(".swiper-wrapper div")
 let verdaderoAnimados = document.querySelectorAll('.animado')
+
+let efectos = document.querySelectorAll('.up-column')
+let efectos2 = document.querySelectorAll('.line-up-down')
 const cajas = document.querySelectorAll(".caja")
 const alturaViewport = window.innerHeight
 const alturaCaja = 35
-
+console.log(efectos.length)
 const arriba = 0
 let ultimaAlturaSlider = 0;
 let actualSlider = 0
 
 for (let i = 0; i < cajas.length; i++) {
     var caja = cajas[i]
+
     let altura = i * 100 + alturaCaja;
-    
+
     caja.style['top'] += `${altura}vh`
     if (i > 0) {
         caja.style['left'] = '20%';
@@ -20,6 +24,14 @@ for (let i = 0; i < cajas.length; i++) {
     }
 
 }
+for (let i = 0; i < efectos.length; i++) {
+    var efecto = efectos[i]
+    var efecto2 = efectos2[i]
+    let altura = (i + 1) * 100;
+    efecto.style['top'] = `${altura}%`
+    efecto2.style['top'] = `calc(${altura}% + 10px)`
+}
+
 
 function getUltimaAlturaSlider() {
     for ( var i = 0; i  < animados.length; i++) {
