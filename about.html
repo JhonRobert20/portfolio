@@ -6,74 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/about.css">
-    <script src="js/dat.gui.min.js"></script>
+    <link rel="shortcut icon" href="media/icons/penguin.png" type="image/x-icon">
     <title>About Jhon Robert</title>
 </head>
 <body oncontextmenu="return false;" onmousedown="return false;" onselectstart="return false;">
-    <canvas></canvas>
-    <header class="header fixed">
-        <a class="cabezera" href="/">Jhon Robert</a>
+    <nav class="lateral-izquierdo fixed">
+        <div class="nav-right-down">
+            <div class="down-effect effect"></div>
+            <div class="down-column"></div>
+            <a href="https://www.instagram.com/jhon_programador/" target="_blanck"><img src="media/icons/instagram.png" alt=""> Instagram</a>
+            <a href="https://github.com/JhonRobert20" target="_blanck"><img src="media/icons/github.png" alt="Github Logo used like link">Github</a>
+            <a href="https://www.linkedin.com/in/jhon-robert-matamoros-vitonera-a084841b7/" target="_blanck"> <img src="media/icons/linkedin.png" alt="Linkedin Logo used like link"> Linkedin</a>
+            <a href="mailto:jhonbara10@hotmail.com?subject=Hello"><img src="media/icons/mail.png" alt="Email Logo used like link"> jhonbara10@hotmail.com</a>
+            <a href="/portfolio/contact.html"><img src="media/icons/contact-form.png" alt="Contact from Logo used like link"> Contact</a>
+        </div>
+
+
+    </nav>  
+    <header class="header fixed-about">
+        <a class="cabezera" href="/portfolio/">Jhon Robert</a>
     </header>
-    <div class="lateral-derecho fixed">
-        <a class="correo" href="mailto:jhonbara10@hotmail.com?subject=Hello">jhonbara10@hotmail.com</a>
-        
-    </div>
-    <div class="lateral-izquierdo fixed">
-        <a class="correo" href="/contact.html">Contact</a>
-    </div> 
     <!-- Aqui pondre todo lo referente al codigo  -->
     <div class="about">
-        <h2>Web Developer, App Developer and Marketing Student</h2>
-        <p>I love to learning new things, and I love what I do.</p>
-        <ul class="about_list">
-            <li>I have been 3 Years in Aerospace Systems Engineering</li>
-            <li>I quit college</li>
-            <li>I improve my skills by programming on my own and in a bootcamp</li>
-            <li> I have been a waiter, referee, deliveryman, clerk, private teacher and sometimes I could sleep</li>
-            <li>I fell in love with london</li>
-            <li>In these last 4 years I have read more books than I can remember</li>
-        </ul>
-            <div class="grid-2">
-                <ul>
-                    <li>Google Ads</li>
-                    <li>Html & css </li>
-                    <li>Marketing Fundamentals</li>
-                    <li>PHP, javascript, python</li>
-                </ul>
-                <ul>
-                    <li>Visual Studio</li>
-                    <li>Google Analitics</li>
-                    <li>GitHub</li>
-                    <li>Dockers</li>
-                    <li>VPN</li>
-                    <li>Hostinger</li>
-                    <li>Wordpress</li>
-                    <li>Seo Tools</li>
-                    <li>Google Business</li>
-                </ul>
-            </div>
-            </div>
-        
-    
-
-
-    <script type="module">
-        import Swiper from 'https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js';
-        var swiper = new Swiper('.swiper-container', {
-            direction: 'vertical',
-            slidesPerView: 1,
-            centeredSlides: true,
-            touchStartPreventDefault: true,
-            mousewheel: true,
-            
-        });
-
-
-    </script>
-    <script>
-        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-        ga('create', 'UA-105392568-1', 'auto');
-    </script>
-    <script src="js/script.js"></script>
+        <h2>Web Developer and Marketing Student</h2>
+        <h3>People usually have good ideas but poor execution. I make solucitons</h3>
+        <div class="about_list">
+            <h3>Nice to meet you!</h3>
+            <p class="about_description">My name is Jhon Robert Matamoros Vitonera. I'm from Ecuador but since I was 9 years old I have been living in Spain.
+                I started coding 5 years ago in my first year of aerospace engineering. I left college when I was about to
+                finish it because it is not my passion. Eventually I joined to a node.js bootcamp.
+                While I was in the college, I was teaching python. After bootcamp I was able to get a job with react and later with Django.
+                I like to learn every day. I have read more books than I can remember. <br>
+                I like to be up to date with people's problems. I detected that there is a bad approach in the creation of web pages so I got to it.
+                </div>
+                <div class="about_list">
+            </p>
+            <h3>My Stack</h3>
+            <ul class="grid-about">
+                <li><img src="media/icons/github.png" loading='lazy' alt="Icono de Github">
+                    <span class="desvanecer">Github</span>
+                </li>
+                <li>
+                    <img src="media/icons/analytics.png" alt="Icono de Google Analytics">
+                    <span class="desvanecer">Google Analytics</span>
+                </li>
+                <li>
+                    <img src="media/icons/docker.png" alt="Icono de Docker">
+                    <span class="desvanecer">Docker</span>
+                </li>
+                <li>
+                    <img src="media/icons/adwords.png" alt="Icono de Google Adds">
+                    <span class="desvanecer">Google Ads</span>
+                </li>
+                <li>
+                    <img src="media/icons/digital-campaign.png" name="aaaaaaaaaaaa" alt="Icono de Marketing">
+                    <span class="desvanecer">Marketing Digital</span>
+                </li>
+                <li>
+                    <img src="media/icons/visual-studio.png" alt="Icono de visual-studio">
+                    <span class="desvanecer">Visual Studio</span>
+                </li>
+                <li>
+                    <img src="media/icons/wordpress.png" alt="Icono de Wordpress">
+                    <span class="desvanecer">Wordpress</span>
+                </li>
+                <li>
+                    <img src="media/icons/seo.png" alt="Icono de Seo">
+                    <span class="desvanecer">Seo Basics</span>
+                </li>
+                <li>
+                    <img src="media/icons/linux.png" alt="Icono de Linux">
+                    <span class="desvanecer">Linux</span>
+                </li>
+            </ul>
+        </div>
+                
+    </div>
 </body>
 </html>

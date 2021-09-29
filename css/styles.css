@@ -1,5 +1,6 @@
 @import url(variables.css);
 @import url(constantes.css);
+@import url(medias.css);
 
 .absolute-center {
     text-align: center;
@@ -11,90 +12,161 @@
 body {
     background-color: var(--negro);
 }
-
-.dg.ac{
-    display: none;
-}
-
 .pantalla {
     height: 100vh;
 }
 a{
     text-decoration: none;
-    color: var(--letras);
     text-transform: inherit;
 }
 
 .lateral-izquierdo{
-    right: 95%;
-    top: 50%;
-    transform: rotate(270deg);
-}
-.fixed {
-    position: fixed;
-}
-.lateral-derecho {
-    top: 50%;
-    left: 85%;
     display: inline;
     white-space: nowrap;
-    transform: rotate(90deg);
+}
+.fixed {
+    position: absolute;
+}
+.lateral-derecho {
+    display: inline;
+    white-space: nowrap;
 }
 .lateral-derecho a:nth-child(1) {
     margin-right: 20px;
 }
 .header{
-    width: 100%;
+    width: 100vw;
     left: 0;
+    text-align: center;
+    top: 5vh;
+}
+.nav-header {
+    position: absolute;    
+    width: 100vw;
     text-align: center;
     top: 5%;
 }
+
+.nav-right-down {
+    position: absolute;
+    left: 85vw;
+    bottom: 10px;
+    display: grid;
+    grid-template-rows: repeat( auto-fit);
+    row-gap: 10px;
+}
+.up-column {
+    position: absolute;
+    left: 22%;
+    top: 100%;
+    border-right: 2px solid rgba(88, 151, 82, 0.3);
+    border-bottom: 2px solid rgba(88, 151, 82, 0.3);
+    width: 60%;
+    height: 10px;
+}
+
+.line-up-down {
+    position: absolute;
+    left: 22%;
+    top: calc(100% + 10px);
+    width: 10px;
+    height: 340px;
+    border-left: 2px solid rgba(88, 151, 82, 0.3)
+}
+.down-column {
+    background-color: rgba(88, 151, 82, 0.3);
+    width: 2px;
+    height: 200px;
+    position: absolute;
+    left: -15px;
+}
+.effect {
+    background-color: rgba(17, 253, 0, 0.5);
+    border-radius: 100%  0;
+    transform: rotate(-45deg);
+    position: absolute;
+}
+.down-effect {
+    width: 10px;
+    height: 10px;
+    animation: laser 2s infinite;
+    left: -19px;
+}
+.up-column-up-effect {
+    width: 3px;
+    height: 3px;
+    animation: laser_up 2s infinite;
+    right: -2px;
+    animation-timing-function: ease-in-out;
+    
+}
+.up-column-right-effect {
+    width: 5px;
+    height: 5px;
+    animation: laser_right 2s infinite;
+    animation-delay: 1s;
+    right: 0px;
+    transform: rotate(45deg);
+    opacity: 0;
+    bottom: -2.5px;
+}
+.line-up-up-effect {
+    width: 5px;
+    height: 5px;
+    animation: laser_up 2s infinite;
+    animation-delay: 2s;
+    opacity: 0;
+    left: -3.3px;
+}
+
+
+.nav-right-down img {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    filter:invert(100%);
+}
 header a{
     font-size: 20px;
+    
+}
+a {
+    color: rgb(204, 166, 166);
+
 }
 a:hover {
     color: white;
     transition: 0.5s;
 }
 
-.caja, .caja2, .caja3 {
-    position: absolute;
-    height: 30vh;
-    width: 60vw;
-    left: 20vw;
-    border: 1px solid grey;
-}
 .caja{
-    top: 35%;
-    left: 40%;
-    width: 20%;
+    position: absolute;
+    height: var(--alturaCaja);
+    width: 100vw;
+    left: 0vw;
+    text-align: center;
     color: white;
-    text-align:center;
-    border: 0;
+    transition: all 1s ease-in-out;
 }
+
+
 .caja h1 {
     padding: 20px 0px 50px 0;
     font-size: 5em;
     display: inline!important;
 }
-.caja2{
-    top: 135%;
-    transition: all 1s;
-}
-.caja2 img {
+.caja img {
     z-index: 1;
     display: block;
     margin: 0 auto;
-    height: 30vh;
-    transition: all 1s;
+    filter: brightness(0.5);
+    width: var(--anchoCaja);
 }
-.caja2 img:hover {
+
+.caja img:hover {
     opacity: 0.5;
 }
-.caja3 {
-    top: 235%;
-    transition: all 1s;
-}
+
 .animado {
     opacity: 0.5;
 }
@@ -115,7 +187,6 @@ a:hover {
         transform: translateY(0);
     }
 }
-
 @keyframes desdeAbajo {
     0% {
         transform: translateY(60px);
@@ -124,10 +195,51 @@ a:hover {
         transform: translateY(0);
     }
 }
-
+@keyframes laser {
+    0% {
+        transform: translateY(0px) rotate(-45deg);
+    }
+    100% {
+        transform: translateY(300px) rotate(-45deg);
+    }
+}
+@keyframes laser_up {
+    0% {
+        top: 0;
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        top: 100%;
+    }
+}
+@keyframes laser_right {
+    0% {
+        right: 0;
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        right: 100%;
+        opacity: 0;
+    }
+}
 .swiper-container,
-.swiper-wrapper,
-.swiper-slide{
+.swiper-wrapper{
+    height: 100%;
+}
+.swiper-slide {
     height: 100vh;
 }
 
@@ -139,8 +251,68 @@ a:hover {
 .my-gallery figure {
     margin: 0px;
   }
-
-.grid-2{
+.center {
+    text-align: center;
+}
+.grid-about{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    row-gap: 10px;
+}
+.grid-rows{
+    display: grid;
+}
+.swiper-slide .caja .text-hover {
+    position: absolute;
+    top: 20px;
+    z-index: 3;
+    opacity: 1;
+    transition: all 0.2s ease-out;
+}
+.text-hover h3 {
+    margin-bottom: 10px;
+}
+.caja img {
+    transition: all 3s;
+}
+.caja:hover img {
+    transition:all 2s;
+    -webkit-transform:scale(3);
+    transform:scale(3);
+}
+nav {
+    width: 10%;
+    height: 100%;
+}
+.caja h4 {
+    text-align: left;
+}
+button {
+    background-color: #181818;
+    border: 1px solid white;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+
+}
+a {
+    transition: all 0.5s ease-in-out ;
+}
+a:hover {
+    width: fit-content;
+    padding: 10px;
+    border: 2px solid blue;
+    background-image: radial-gradient(circle,
+      transparent, transparent 57%, #3a8534 58%, #1a292c 100%), repeating-linear-gradient(-40deg, #3a8534,
+      #3a8534 10%, black 21%, #1a292c30, #3a8534 41%);
+    border-radius: 10px;
+    transition: all 0.75s ease-in-out;
+}
+button:hover {
+    cursor: pointer;
+    background-color: black;
 }
