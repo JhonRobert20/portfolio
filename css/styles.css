@@ -1,5 +1,6 @@
 @import url(variables.css);
 @import url(constantes.css);
+@import url(medias.css);
 
 .absolute-center {
     text-align: center;
@@ -11,11 +12,6 @@
 body {
     background-color: var(--negro);
 }
-
-.dg.ac{
-    display: none;
-}
-
 .pantalla {
     height: 100vh;
 }
@@ -39,15 +35,14 @@ a{
     margin-right: 20px;
 }
 .header{
-    width: 100%;
+    width: 100vw;
     left: 0;
     text-align: center;
-    top: 5%;
+    top: 5vh;
 }
 .nav-header {
-    position: absolute;
-    left: calc(49vw - 30px);
-    width: 100%;
+    position: absolute;    
+    width: 100vw;
     text-align: center;
     top: 5%;
 }
@@ -147,8 +142,8 @@ a:hover {
 .caja{
     position: absolute;
     height: var(--alturaCaja);
-    width: 40vw;
-    left: 40vw;
+    width: 100vw;
+    left: 0vw;
     text-align: center;
     color: white;
     transition: all 1s ease-in-out;
@@ -165,7 +160,7 @@ a:hover {
     display: block;
     margin: 0 auto;
     filter: brightness(0.5);
-    height: var(--alturaCaja);
+    width: var(--anchoCaja);
 }
 
 .caja img:hover {

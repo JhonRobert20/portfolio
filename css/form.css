@@ -3,6 +3,12 @@ label {
     font-size: 19px;
     font-weight: bold;
 }
+body {
+    overflow-y: auto!important;
+}
+.contact-content {
+    width: 100%;
+}
 .contact_form {
     width: 40%;
     z-index: 2;

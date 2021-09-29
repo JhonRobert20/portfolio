@@ -4,7 +4,7 @@
     margin: 100px auto;
 }
 body {
-    overflow: auto;
+    overflow-y: auto;
 }
 
 .about h2, .about h3 {
