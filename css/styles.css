@@ -46,10 +46,12 @@ a{
 }
 .nav-header {
     position: absolute;
-    display: grid;
-    left: 49vw;
+    left: calc(49vw - 30px);
+    width: 100%;
+    text-align: center;
     top: 5%;
 }
+
 .nav-right-down {
     position: absolute;
     left: 85vw;
@@ -171,7 +173,7 @@ a:hover {
 }
 
 .animado {
-    opacity: 0;
+    opacity: 0.5;
 }
 .desdeArriba {
     animation: desdeArriba 1s;
