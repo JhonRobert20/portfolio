@@ -49,7 +49,7 @@ a{
 
 .nav-right-down {
     position: absolute;
-    left: 85vw;
+    left: 80vw;
     bottom: 10px;
     display: grid;
     grid-template-rows: repeat( auto-fit);
@@ -57,20 +57,20 @@ a{
 }
 .up-column {
     position: absolute;
-    left: 22%;
-    top: 100%;
+    left: 12%;
+    top: 0%;
     border-right: 2px solid rgba(88, 151, 82, 0.3);
     border-bottom: 2px solid rgba(88, 151, 82, 0.3);
-    width: 60%;
+    width: 70%;
     height: 10px;
 }
 
 .line-up-down {
     position: absolute;
-    left: 22%;
-    top: calc(100% + 10px);
+    left: 12%;
+    top: 10px;
     width: 10px;
-    height: 340px;
+    height: 30%;
     border-left: 2px solid rgba(88, 151, 82, 0.3)
 }
 .down-column {
@@ -141,9 +141,10 @@ a:hover {
 
 .caja{
     position: absolute;
-    height: var(--alturaCaja);
-    width: 100vw;
-    left: 0vw;
+    height: 50%;
+    width: 80vw;
+    top: 30%;
+    left: 10vw;
     text-align: center;
     color: white;
     transition: all 1s ease-in-out;
@@ -241,13 +242,33 @@ a:hover {
     height: 100%;
 }
 .swiper-slide {
+    position: relative;
     height: 100vh;
 }
 
 .swiper-slide-active {
     opacity: 1;
-    width: 20vw;
-    margin-left: 40vw;
+    position: relative;
+    margin: 0 auto;
+    left: 0%;
+    width: 100vw;
+}
+.swipe-hand{
+    width: 40px!important;
+    margin-top: 40px!important;
+    animation: swipe-hand 2s infinite ease-in-out;
+}
+
+@keyframes swipe-hand {
+    0%{
+        transform: translateY(0px) scale(1);
+    }
+    50%{
+        transform: translateY(200px) scale(2);
+    }
+    100% {
+        transform: translateY(0px) scale(1);
+    }
 }
 .my-gallery figure {
     margin: 0px;
@@ -336,13 +357,13 @@ button:hover {
 /*Cookies*/
 .aviso-cookies {
 	display: none;
-	background: #fff;
+	background: var(--negro);
 	padding: 20px;
 	width: calc(100% - 40px);
 	line-height: 150%;
 	border-radius: 10px;
-	position: fixed;
-	bottom: 20px;
+	position:absolute;
+	top: 100px;
 	left: 20px;
 	z-index: 100!important;
 	padding-top: 60px;
@@ -356,25 +377,26 @@ button:hover {
 
 .aviso-cookies .galleta {
 	max-width: 100px;
+    width: 50px;
 	position: absolute;
-	top: -50px;
-	left: calc(50% - 50px);
+	top: -20px;
+	left: calc(50% - 25px);
 }
 
 .aviso-cookies .titulo,
 .aviso-cookies .parrafo {
 	margin-bottom: 15px;
-    color: #4DBFFF;
+    color: var(--pink);
 }
 .pink {
     color: var(--pink);
 }
 .aviso-cookies .boton {
-	width: 100%;
+	width: 10%;
+    min-width: 20px;
 	background: #595959;
 	border: none;
-	color: #fff;
-	font-family: 'Roboto', sans-serif;
+	color: var(--pink);
 	text-align: center;
 	padding: 15px 20px;
 	font-weight: 700;
@@ -390,7 +412,7 @@ button:hover {
 }
 
 .aviso-cookies .enlace {
-	color: #4DBFFF;
+	color: var(--pink);
 	text-decoration: none;
 	font-size: 14px;
 }
@@ -401,12 +423,12 @@ button:hover {
 
 .fondo-aviso-cookies {
 	display: none;
-	background: rgba(0,0,0,.80);
+	background: var(--almostBlack);
 	position: absolute;
 	z-index: 99;
-	width: 100000px;
-	height: 100000px;
-	top: -1000px;
+	width: 100%;
+	height: 100%;
+	top: 0px;
 	left: 0;
 }
 

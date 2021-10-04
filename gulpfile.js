@@ -53,4 +53,8 @@ function versionWebp() {
 
 const ara = series( css, javascript, imagenes, versionWebp );
 const now = series( css, javascript)
-export default now;
+const watchCss = () => { 
+    watch(paths.css, css)
+    watch(paths.js, javascript)
+}
+export{now, watchCss};

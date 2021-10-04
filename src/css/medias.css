@@ -2,7 +2,7 @@
     .grid-about{
         grid-template-columns: repeat( auto-fit, minmax(100px, 1fr) )!important;
     }
-    .contact .nav-right-down {
+    .contact .nav-right-down, .about .nav-right-down {
         display: none;
     }
 }
@@ -19,13 +19,9 @@
     .nav-right-down {
         left: 20px!important;
     }
-    .caja{
-        width: 80vw!important;
-        left: 10vw!important;
-        
-    }
-    .caja img {
-        width: var(--anchoCajaMedia)!important;
+    
+    .caja:nth-child(n+2) img {
+        width: var(--anchoCajaMedia);
     }
     .caja h1 {
         font-size: 2em !important;

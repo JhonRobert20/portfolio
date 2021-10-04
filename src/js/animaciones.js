@@ -11,26 +11,6 @@ const arriba = 0
 let ultimaAlturaSlider = 0;
 let actualSlider = 0
 
-for (let i = 0; i < cajas.length; i++) {
-    var caja = cajas[i]
-
-    let altura = i * 100 + alturaCaja;
-
-    caja.style['top'] += `${altura}vh`
-    if (i > 0) {
-        caja.style['left'] = '20%';
-        caja.style['width'] = '60%';
-    }
-
-}
-for (let i = 0; i < efectos.length; i++) {
-    var efecto = efectos[i]
-    var efecto2 = efectos2[i]
-    let altura = (i + 1) * 100;
-    efecto.style['top'] = `${altura}%`
-    efecto2.style['top'] = `calc(${altura}% + 10px)`
-}
-
 
 function getUltimaAlturaSlider() {
     for ( var i = 0; i  < animados.length; i++) {
@@ -41,8 +21,6 @@ function getUltimaAlturaSlider() {
     }
     return 0
 }
-
-
 
 ultimaAlturaSlider = getUltimaAlturaSlider()
 function removeIfContains(obj, clase) {
