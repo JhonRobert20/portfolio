@@ -349,3 +349,9 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+### Ignore for user ###
+.node_modules/
+.src/
+.gulpfile.js
+./**.json
