@@ -35,7 +35,6 @@ function javascript() {
         .pipe( concat('bundle.js') )
         .pipe( terser() )
         .pipe(sourcemaps.write('.'))
-        .pipe( rename({ suffix: '.min' }))
         .pipe( dest('./build/js') )
 }
 
