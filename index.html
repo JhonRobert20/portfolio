@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="English">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
-        <link rel="shortcut icon" href="media/icons/penguin.png" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="build/css/styles.css">
+        <link rel="shortcut icon" href="build/img/icons/penguin.png" type="image/x-icon">
         <title>Profesional Portfolio Jhon Robert Lleida - Web Developer and Marketing Student</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <meta name="robots" content="noindex" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
         <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -19,6 +20,22 @@
 
         gtag('config', 'G-6VGW07Z34Z');
         </script>
+          <script>
+            document.addEventListener('gdprCookiesEnabled', function (e) {
+                  if(e.detail.analytics) { 
+                    
+                    var script = document.createElement('script');
+                    script.src = "https://www.googletagmanager.com/gtag/js?id=UA-XXXX-X";
+                script.async = true;
+                    document.head.appendChild(script);
+                    
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'UA-XXX-X'); 
+                  }
+            });
+            </script>
         <meta name="description" content="Portfolio of some projects that show some amazing projects like a 
         Barbery Shop, a Rock Festival and a Rick and Morty APi. I normally use php, Javascript, html, css and Python">
     </head>
@@ -28,15 +45,15 @@
             <div class="nav-right-down">
                 <div class="down-effect effect"></div>
                 <div class="down-column"></div>
-                <a href="https://www.instagram.com/jhon_programador/" target="_blanck"><img src="media/icons/instagram.png" alt=""> Instagram</a>
-                <a href="https://github.com/JhonRobert20" target="_blanck"><img src="media/icons/github.png" alt="Github Logo used like link">Github</a>
-                <a href="https://www.linkedin.com/in/jhon-robert-matamoros-vitonera-a084841b7/" target="_blanck"> <img src="media/icons/linkedin.png" alt="Linkedin Logo used like link"> Linkedin</a>
-                <a href="mailto:jhonbara10@hotmail.com?subject=Hello"><img src="media/icons/mail.png" alt="Email Logo used like link"> jhonbara10@hotmail.com</a>
-                <a href="/jhonrobert/contact.html"><img src="media/icons/contact-form.png" alt="Contact from Logo used like link"> Contact</a>
-                <a href="/jhonrobert/rights.html">Rights</a>
+                <a href="https://www.instagram.com/jhon_programador/" target="_blanck"><img src="build/img/icons/instagram.png" alt=""> Instagram</a>
+                <a href="https://github.com/JhonRobert20" target="_blanck"><img src="build/img/icons/github.png" alt="Github Logo used like link">Github</a>
+                <a href="https://www.linkedin.com/in/jhon-robert-matamoros-vitonera-a084841b7/" target="_blanck"> <img src="build/img/icons/linkedin.png" alt="Linkedin Logo used like link"> Linkedin</a>
+                <a href="mailto:jhonbara10@hotmail.com?subject=Hello"><img src="build/img/icons/mail.png" alt="Email Logo used like link"> jhonbara10@hotmail.com</a>
+                <a href="/contact.html"><img src="build/img/icons/contact-form.png" alt="Contact from Logo used like link"> Contact</a>
+                <a href="/rights.html">Rights</a>
             </div>
             <div class="nav-header">
-                <a href="/jhonrobert/about.html">About</a>
+                <a href="/about.html">About</a>
             </div>
         </nav>  
         
@@ -58,10 +75,10 @@
                     <div class="line-up-up-effect effect"></div>
                 </div>
                 <div class="caja animado">
-                    <img src="media/proyects/bienes-raices.JPG" alt="Imagen sobre una web de una inmobiliaria">
+                    <img src="build/img/proyects/bienes-raices.JPG" alt="Imagen sobre una web de una inmobiliaria">
                     <div class="text-hover">
                         <h3>Real state</h3>
-                        <a href="https://naughty-clarke-595100.netlify.app/" target="_blank">View Page</a>
+                        <a href="https://naughty-clarke-595100.netlify.app/" loading="lazy" target="blank" rel="noreferrer">View Page</a>
                     </div>
                 </div>
             </div>
@@ -74,10 +91,10 @@
                     <div class="line-up-up-effect effect"></div>
                 </div>
                 <div class="caja animado">
-                    <img src="media/proyects/peluqueria.JPG" alt="Imagen sobre una web de una peluqueria">
+                    <img src="build/img/proyects/peluqueria.JPG" alt="Imagen sobre una web de una peluqueria">
                     <div class="text-hover">
                         <h3>Barber Shop</h3>
-                        <a href="https://confident-fermi-480752.netlify.app/" target="_blank">View Page</a>
+                        <a href="https://confident-fermi-480752.netlify.app/" target="blank" rel="noreferrer">View Page</a>
                     </div>
                 </div>
             </div>
@@ -90,10 +107,10 @@
                     <div class="line-up-up-effect effect"></div>
                 </div>
                 <div class="caja animado">
-                    <img src="media/proyects/rick.jpg" alt="Imagen sobre web de la api de Rick y Morty">
+                    <img src="build/img/proyects/rick.jpg" alt="Imagen sobre web de la api de Rick y Morty">
                     <div class="text-hover">
                         <h3>Rick & Morty</h3>
-                        <a href="https://rickandmortyjhon.netlify.app/" target="_blank">View Page</a>
+                        <a href="https://rickandmortyjhon.netlify.app/" target="blank" rel="noreferrer">View Page</a>
                     </div>
                 </div>
             </div>
@@ -106,10 +123,10 @@
                     <div class="line-up-up-effect effect"></div>
                 </div>
                 <div class="caja animado">
-                    <img src="media/proyects/rock.JPG" alt="Imagen web sobre un festival rock">
+                    <img src="build/img/proyects/rock.JPG" alt="Imagen web sobre un festival rock">
                     <div class="text-hover">
                         <h3>Rock Festival</h3>
-                        <a href="https://confident-fermi-480752.netlify.app/" target="_blank">View Page</a>
+                        <a href="https://confident-fermi-480752.netlify.app/" target="blank" rel="noreferrer">View Page</a>
                     </div>
                 </div>
             </div>
@@ -118,7 +135,7 @@
     </div>
 
         
-        <script src="js/animaciones.js"></script>
+        <script src="build/js/bundle.min.js"></script>
         
         <script type="module">
             import Swiper from 'https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js';
@@ -134,5 +151,21 @@
 
 
         </script>
+
+  <!-- Script principal de GDPR Cookie Notice -->
+  <script src="/assets/gdpr/script.js?ver=5.7" id="gdpr-js-js"></script>
+  
+  <!-- Llamada y opciones para el GDPR Cookie Notice -->
+  <script>
+  gdprCookieNotice({
+		  locale: 'es', // si lo cambias debes tener un archivo como el de arriba es.js
+		  timeout: 1500, // tiempo de espera
+		  expiration: 30, // días de duración de la cookie
+		  domain: window.location.hostname, // dominio
+		  implicit: false, // debe se false, porque de lo contrario no cumples
+		  statement: '/condiciones', // url a la política de cookies / legal
+		  analytics: ['ga'] // aquí el grupo analitica pero hay más en opciones
+  });
+  </script>
     </body>
 </html>

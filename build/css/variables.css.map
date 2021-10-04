@@ -1,0 +1,1 @@
+{"version":3,"sources":["variables.css"],"names":[],"mappings":"AAAA,MACI,gBAAiB,CACjB,cAAe,CACf,eAAgB,CAChB,gBAAiB,CACjB,qBACJ","file":"variables.css","sourcesContent":[":root{\n    --letras: #848484;\n    --rosa: #F100FA;\n    --negro: #181818;\n    --anchoCaja: 50vw;\n    --anchoCajaMedia: 80vw;\n}"]}

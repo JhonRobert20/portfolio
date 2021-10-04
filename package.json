@@ -1,0 +1,25 @@
+{
+  "devDependencies": {
+    "autoprefixer": "^10.3.6",
+    "cssnano": "^5.0.8",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-notify": "^4.0.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-terser-js": "^5.2.2",
+    "gulp-webp": "^4.0.1"
+  },
+  "scripts": {
+    "test": "echo Error: no test specified && exit 1",
+    "start": "node gulpfile.js"
+  },
+  "type": "module",
+  "compilerOptions": {     
+    "module": "es6",
+    "target": "es5"   
+  },
+  "moduleResolution": "Node"
+}

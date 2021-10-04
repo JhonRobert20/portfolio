@@ -7,7 +7,6 @@ let efectos2 = document.querySelectorAll('.line-up-down')
 const cajas = document.querySelectorAll(".caja")
 const alturaViewport = window.innerHeight
 const alturaCaja = 35
-console.log(efectos.length)
 const arriba = 0
 let ultimaAlturaSlider = 0;
 let actualSlider = 0
@@ -38,7 +37,6 @@ function getUltimaAlturaSlider() {
         if (animados[i].classList.contains("swiper-slide-active")) {
             console.log(animados[i].offsetTop)
             return animados[i].offsetTop
-
         }
     }
     return 0
@@ -117,4 +115,5 @@ function mostrarScroll() {
     ultimaAlturaSlider = getUltimaAlturaSlider()
 }
 
-document.querySelector('.swiper-container').addEventListener('wheel', debounce(mostrarScroll, 100), false)
+document.querySelector('.swiper-container').addEventListener('wheel', debounce(mostrarScroll, 100), true)
+document.querySelector('.swiper-container').addEventListener('touchmove', debounce(mostrarScroll, 100), true)

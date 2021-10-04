@@ -51,6 +51,3 @@ span {
 .grid-about li:hover .desvanecer {
     opacity: 1;
 }
-.fixed-about {
-    position: relative;
-}
