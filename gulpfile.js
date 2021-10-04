@@ -52,5 +52,5 @@ function versionWebp() {
 
 
 const ara = series( css, javascript, imagenes, versionWebp );
-
-export default ara;
+const now = series( css, javascript)
+export default now;
