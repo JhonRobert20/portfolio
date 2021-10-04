@@ -2,7 +2,7 @@
     .grid-about{
         grid-template-columns: repeat( auto-fit, minmax(100px, 1fr) )!important;
     }
-    .contact .nav-right-down, .about .nav-right-down {
+    .contact .nav-right-down, .body-about .nav-right-down {
         display: none;
     }
 }
@@ -28,5 +28,13 @@
     }
     .contact_form {
         width: 80%!important;
+    }
+    .animado {
+        opacity: 1;
+    }
+}
+@media (min-width: 1100px) {
+    .animado {
+        opacity: 0.5;
     }
 }

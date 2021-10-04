@@ -6,6 +6,7 @@ let efectos = document.querySelectorAll('.up-column')
 let efectos2 = document.querySelectorAll('.line-up-down')
 const cajas = document.querySelectorAll(".caja")
 const alturaViewport = window.innerHeight
+
 const alturaCaja = 35
 const arriba = 0
 let ultimaAlturaSlider = 0;
@@ -15,7 +16,6 @@ let actualSlider = 0
 function getUltimaAlturaSlider() {
     for ( var i = 0; i  < animados.length; i++) {
         if (animados[i].classList.contains("swiper-slide-active")) {
-            console.log(animados[i].offsetTop)
             return animados[i].offsetTop
         }
     }
@@ -73,7 +73,6 @@ function mostrarScroll() {
         let animado = animados[i]
         let alturaAnimado = animado.offsetTop;
         let diferencia =  alturaAnimado - ultimaAlturaSlider
-        console.log(`diferencia ${diferencia}; alturaSlider: ${ultimaAlturaSlider}; i: ${i}` )
         if (diferencia > 0 && actualSlider == alturaViewport * i) {
             quitarOtras(verdaderoAnimados, i , 'desdeArriba', 'desdeAbajo')
             quitarOtrasLetras(animados, i , 'desdeArriba 1s')
@@ -93,13 +92,8 @@ function mostrarScroll() {
     ultimaAlturaSlider = getUltimaAlturaSlider()
 }
 
-try {
-    document.querySelector('.swiper-container').addEventListener('wheel', debounce(mostrarScroll, 100), true)
-    document.querySelector('.swiper-container').addEventListener('touchmove', debounce(mostrarScroll, 100), true)
-} catch {
-    console.error("no find querySelector")
-}
-
+document.querySelector('.swiper-container').addEventListener('wheel', debounce(mostrarScroll, 100), true)
+document.querySelector('.swiper-container').addEventListener('touchmove', debounce(mostrarScroll, 100), false)
 
 try {
     

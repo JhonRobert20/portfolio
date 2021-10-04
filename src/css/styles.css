@@ -169,9 +169,7 @@ a:hover {
     opacity: 0.5;
 }
 
-.animado {
-    opacity: 0.5;
-}
+
 .desdeArriba {
     animation: desdeArriba 1s;
     opacity: 1!important;
