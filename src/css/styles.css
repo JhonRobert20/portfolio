@@ -361,7 +361,7 @@ button:hover {
 	line-height: 150%;
 	border-radius: 10px;
 	position:absolute;
-	top: 100px;
+	bottom: 10px;
 	left: 20px;
 	z-index: 100!important;
 	padding-top: 60px;
@@ -389,9 +389,12 @@ button:hover {
 .pink {
     color: var(--pink);
 }
+.div-boton {
+    width: 100%;
+}
 .aviso-cookies .boton {
-	width: 10%;
-    min-width: 20px;
+	width: 30%;
+    margin: 0 auto;
 	background: #595959;
 	border: none;
 	color: var(--pink);
@@ -423,7 +426,7 @@ button:hover {
 	display: none;
 	background: var(--almostBlack);
 	position: absolute;
-	z-index: 99;
+	z-index: 9;
 	width: 100%;
 	height: 100%;
 	top: 0px;
